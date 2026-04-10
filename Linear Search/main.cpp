@@ -14,7 +14,7 @@ int main() {
     assert(linearSearch(arr, size, 67) == 0);
     assert(linearSearch(arr, size, 88) == -1);
 
-    std::cout << "All linear search tests passed!\n";
+    std::cout << "All linear search tests passed\n";
 
     std::cout << "\n \n \n";
 
@@ -43,7 +43,7 @@ int main() {
         }
         else
         {
-            std::cout << "Value not found in array.\n";
+            std::cout << "Value not found in array";
         }
     }
 

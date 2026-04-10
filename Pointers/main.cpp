@@ -15,5 +15,5 @@ int main() {
     assert(x == 20);
     assert(y == 10);
 
-    std::cout << "Swap successful\n";
+    std::cout << "Swap successful";
 }

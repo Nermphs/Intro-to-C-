@@ -34,7 +34,7 @@ int main() {
 	assert(magicResult.strength == 10);
 	assert(magicResult.magic == 100);
 
-	std::cout << "All potion tests passed!" << std::endl;
+	std::cout << "All potion tests passed" << std::endl;
 
 	return 0;
 }

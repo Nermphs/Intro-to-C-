@@ -4,6 +4,7 @@
 #include "Statistics.h"
 
 int main() {
+	// Accuracy tests
     assert(calculateAccuracy(3, 4) == 75);
     assert(calculateAccuracy(1, 2) == 50);
     assert(calculateAccuracy(13, 13) == 100);

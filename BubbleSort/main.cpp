@@ -18,7 +18,7 @@ int main() {
         assert(arr[i] <= arr[i + 1]);
     }
 
-    std::cout << "Array is sorted correctly!\n";
+    std::cout << "Array is sorted correctly\n";
 
     // Binary search tests
     assert(binarySearch(arr, size, 11) == 4);
@@ -26,7 +26,7 @@ int main() {
     assert(binarySearch(arr, size, 97) == 19);
     assert(binarySearch(arr, size, 88) == -1);
 
-    std::cout << "All tests passed!\n";
+    std::cout << "All tests passed\n";
 
     // User input
     int target;
@@ -52,7 +52,7 @@ int main() {
         }
         else
         {
-            std::cout << "Value not found.\n";
+            std::cout << "Value not found";
         }
     }
 

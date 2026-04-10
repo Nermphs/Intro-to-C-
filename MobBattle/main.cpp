@@ -38,17 +38,17 @@ int main() {
     // Checks for draw
     if (mobA.health <= 0 && mobB.health <= 0)
     {
-        std::cout << "It's a draw!\n";
+        std::cout << "It's a draw\n";
     }
     // Checks if mobB wins
     else if (mobA.health <= 0)
     {
-        std::cout << mobB.name << " wins!\n";
+        std::cout << mobB.name << " wins\n";
     }
 	// Sets mobA as winner
     else
     {
-        std::cout << mobA.name << " wins!\n";
+        std::cout << mobA.name << " wins";
     }
 
 	return 0;
