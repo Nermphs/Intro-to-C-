@@ -1,20 +1,38 @@
-// MobBattle.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+#include "MobBattle.h"
 
 #include <iostream>
+#include <cstdlib>
 
-int main()
+void battle(Mob& a, Mob& b)
 {
-    std::cout << "Hello World!\n";
+	//Rolls value between 1 and 20 for each mob
+    int rollA = rand() % 20 + 1;
+    int rollB = rand() % 20 + 1;
+
+	// Checks if rollA is less than or equal to A's attack skill
+    if (rollA <= a.attackSkill)
+    {
+        // Applys dmg
+        b.health -= a.damage;
+		// Prints attack result
+        std::cout << a.name << " hit " << b.name
+            << " for " << a.damage << " damage!\n";
+    }
+    else
+    {
+        // Prints miss
+        std::cout << a.name << " missed!\n";
+    }
+
+	// Same thing but for mob b
+    if (rollB <= b.attackSkill)
+    {
+        a.health -= b.damage;
+        std::cout << b.name << " hit " << a.name
+            << " for " << b.damage << " damage!\n";
+    }
+    else
+    {
+        std::cout << b.name << " missed!\n";
+    }
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
