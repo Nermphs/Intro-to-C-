@@ -39,3 +39,33 @@
 
 # debug information files
 *.dwo
+
+# Visual Studio user-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio workspace
+.vs/
+
+# Build output directories
+Debug/
+Release/
+x64/
+x86/
+out/
+build/
+
+# IntelliSense
+ipch/
+*.VC.db
+*.VC.VC.opendb
+*.opendb
+
+# MSBuild
+*.tlog
+*.lastbuildstate
+*.cache
+
+
