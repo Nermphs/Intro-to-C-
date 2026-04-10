@@ -5,7 +5,7 @@
 
 int main() {
     // Assign arr and size
-    int arr[] = { 3, 1, 4, 1, 5, 9, 2, 6, 5, 3 };
+    int arr[] = { 67,13,3,89,43,2,19,71,5,61,97,7,37,31,17,11,83,53,23,29 };
     int size = sizeof(arr) / sizeof(arr[0]);
 
     //Test Search
